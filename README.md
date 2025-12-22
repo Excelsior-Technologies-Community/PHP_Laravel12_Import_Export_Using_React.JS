@@ -16,9 +16,11 @@ The project uses **Blade templates with React (Vite)** for a modern frontend exp
 * **Backend:** Laravel 12  
 * **Frontend:** React.js (Vite) embedded in Blade  
 * **Database:** MySQL  
-* **Excel Integration:** Maatwebsite Excel package  
+* **Excel Integration:** Maatwebsite Excel package
+  
+---
 
-**Key Highlights:**
+## Key Highlights:
 
 * Import products from Excel / CSV files  
 * Export products to Excel  
@@ -75,6 +77,8 @@ PHP_Laravel12_Import_Export_Using_React.JS/
 
 ```bash
 composer create-project laravel/laravel PHP_Laravel12_Import_Export_Using_React.JS "12.*"
+
+cd PHP_Laravel12_Import_Export_Using_React.JS
 ```
 
 ---
@@ -396,7 +400,7 @@ class ProductsExport implements FromCollection, WithHeadings
 
 ---
 
-## 🧠 Step 11: Controller (FULL CRUD + Import + Export)
+## Step 11: Controller (FULL CRUD + Import + Export)
 
 ```
 php artisan make:controller ProductController 
@@ -889,9 +893,38 @@ http://127.0.0.1:8000/products
 
 ## Output
 
+**Create Product**
+
+<img width="1919" height="1032" alt="Screenshot 2025-12-22 104546" src="https://github.com/user-attachments/assets/c5fc65cc-29ad-4364-91c2-4fd007b2766e" />
+
+
+**Import Product**
+
+<img width="1919" height="1027" alt="Screenshot 2025-12-19 122613" src="https://github.com/user-attachments/assets/795e5e64-5523-4431-a6d3-0aae6b0a428e" />
+
+<img width="1919" height="1033" alt="Screenshot 2025-12-22 105323" src="https://github.com/user-attachments/assets/7647d016-5279-4ae3-ba7d-bf61d76bfa28" />
+
+
+**Export Product**
+
+<img width="1896" height="890" alt="Screenshot 2025-12-19 122658" src="https://github.com/user-attachments/assets/8262f778-1f80-4fab-b983-587986646458" />
+
+
+**Edit Product**
+
+<img width="1919" height="1032" alt="Screenshot 2025-12-22 105310" src="https://github.com/user-attachments/assets/6e14b974-73f6-4e19-a2de-ec62f2fb9b89" />
+
+<img width="1919" height="1033" alt="Screenshot 2025-12-22 105323" src="https://github.com/user-attachments/assets/a5b97f89-88e7-490a-b4f8-76ca2ab0f914" />
+
+
+**Delete Product**
+
+<img width="1919" height="1026" alt="Screenshot 2025-12-22 105456" src="https://github.com/user-attachments/assets/97d93f75-8d83-4b25-8813-46037557222b" />
+
+<img width="1919" height="1033" alt="Screenshot 2025-12-22 105505" src="https://github.com/user-attachments/assets/0ba2472f-7de6-4067-a600-a614ad2cf200" />
 
 
 ---
 
 
-**Your PHP_Laravel12_Import_Export_Using_React.JS project is COMPLETE**
+**Your PHP_Laravel12_Import_Export_Using_React.JS project is COMPLETED**

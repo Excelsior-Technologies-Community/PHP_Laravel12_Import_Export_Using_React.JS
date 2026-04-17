@@ -123,9 +123,8 @@ class ProductController extends Controller
     {
         // Validate uploaded file type
         $request->validate([
-            'file' => 'required|mimes:xlsx,csv',
+            'file' => 'required|mimes:xlsx,csv|max:2048',
         ]);
-
         // Import data using ProductsImport class
         Excel::import(new ProductsImport, $request->file('file'));
 
@@ -140,5 +139,14 @@ class ProductController extends Controller
     {
         // Download Excel file using ProductsExport class
         return Excel::download(new ProductsExport, 'products.xlsx');
+    }
+
+    public function exportSelected(Request $request)
+    {
+        $ids = $request->ids;
+
+        $products = Product::whereIn('id', $ids)->get();
+
+        return response()->json($products);
     }
 }

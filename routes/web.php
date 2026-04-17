@@ -19,3 +19,5 @@ Route::post('/products/import', [ProductController::class, 'import'])->name('pro
 
 // Export products (Excel)
 Route::get('/products/export', [ProductController::class, 'export'])->name('products.export');
+
+Route::post('/products/export-selected', [ProductController::class, 'exportSelected']);

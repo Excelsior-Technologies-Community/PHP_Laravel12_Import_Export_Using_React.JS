@@ -21,3 +21,6 @@ Route::post('/products/import', [ProductController::class, 'import'])->name('pro
 Route::get('/products/export', [ProductController::class, 'export'])->name('products.export');
 
 Route::post('/products/export-selected', [ProductController::class, 'exportSelected']);
+
+Route::get('/products/download-template', [ProductController::class, 'downloadTemplate'])->name('products.template');
+Route::post('/products/export-pdf', [ProductController::class, 'exportPDF'])->name('products.pdf');
